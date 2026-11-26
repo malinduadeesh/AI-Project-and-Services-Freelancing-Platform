@@ -1,11 +1,6 @@
-    -- Database Creation
 
-    -- Table Creation
-
-    -- ====================================
--- Member 1: Freelancer Management
--- ====================================
-
+CREATE DATABASE FreelancingPlatformDB;
+USE FreelancingPlatformDB;
 
 CREATE TABLE [User] (
     User_ID INT IDENTITY(1,1) PRIMARY KEY,
