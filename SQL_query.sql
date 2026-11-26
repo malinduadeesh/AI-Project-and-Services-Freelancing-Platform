@@ -69,3 +69,21 @@ CREATE TABLE Freelancer_Service (
         REFERENCES AI_Service(Service_ID)
 );
 
+-- Member 5 - AI Services and Administration
+
+CREATE TABLE Complaint (
+Complaint_ID INT IDENTITY(1,1) PRIMARY KEY,
+User_ID INT NOT NULL,
+Admin_ID INT NULL,
+Complaint NVARCHAR(MAX) NOT NULL,
+Complaint_Status NVARCHAR(20) NOT NULL DEFAULT 'Pending',
+Complaint_Date DATETIME NOT NULL DEFAULT GETDATE(),
+
+CONSTRAINT FK_Complaint_User
+FOREIGN KEY (User_ID)
+REFERENCES [User](User_ID),
+
+CONSTRAINT FK_Complaint_Admin
+FOREIGN KEY (Admin_ID)
+REFERENCES [User](User_ID));
+
