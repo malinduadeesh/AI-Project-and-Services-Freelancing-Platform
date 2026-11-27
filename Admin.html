@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator - SkillForgeAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            AI Projects and Services Freelancing Platform
+        </div>
+
+        <div class="top-right">
+            <span>Administrator</span>
+            <a href="HomePage.html">Sign Out</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <button class="active"
+                onclick="addContent('admin/Dashboard.html', this)">
+                Dashboard
+            </button>
+
+            <button onclick="addContent('admin/ManageUsers.html', this)">
+    Manage Users
+</button>
+
+            <button
+                onclick="addContent('admin/AISkills.html', this)">
+                AI Skills
+            </button>
+
+            <button
+                onclick="addContent('admin/AIServices.html', this)">
+                AI Services
+            </button>
+
+        </aside>
+
+        <main class="main">
+            <iframe
+                id="content-frame"
+                class="content-frame"
+                name="mainContent"
+                title="Administrator Content"
+                src="admin/Dashboard.html">
+            </iframe>
+        </main>
+
+    </div>
+
+</body>
+</html>
