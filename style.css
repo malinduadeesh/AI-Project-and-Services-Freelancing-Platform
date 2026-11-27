@@ -52,6 +52,35 @@ body{
     border-right:1px solid #e8e8e8;
 }
 
+.sidebar button{
+    width:100%;
+    padding:14px 18px;
+    margin-bottom:8px;
+    border:none;
+    border-radius:10px;
+    background:transparent;
+    text-align:left;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    color:#4a5568;
+    transition:all 0.25s ease;
+}
+
+/* Hover effect */
+.sidebar button:hover{
+    background:#eef2ff;
+    color:#4455cc;
+    transform:translateX(4px);
+}
+
+/* Active button */
+.sidebar button.active{
+    background:#e4e7ff;
+    color:#4455cc;
+    font-weight:600;
+}
+
 /* MAIN */
 .main{
     flex:1;
